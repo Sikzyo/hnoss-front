@@ -2,15 +2,20 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 type DarkMode = {
-  theme: string;
-  setTheme: (by: "light" | "dark") => void;
+  isDark: boolean;
+  setIsDark: () => void;
 };
 
 export const useDarkMode = create<DarkMode>()(
   persist(
     (set) => ({
-      theme: "light",
-      setTheme: (by) => set(() => ({ theme: by })),
+      isDark: false,
+      setIsDark: () =>
+        set((state) => {
+          const next = !state.isDark;
+          document.documentElement.classList.toggle("dark", next);
+          return { isDark: next };
+        }),
     }),
     { name: "theme" },
   ),
