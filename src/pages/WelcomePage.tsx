@@ -1,7 +1,7 @@
 import { Button } from "@/shared/components/ui/button";
 import { LogIn, UserPlus } from "lucide-react";
 import { Typography } from "@/shared/components/ui/typography";
-import DarkmodeButton from "@/shared/components/Buttons/DarkmodeButton";
+import DarkmodeButton from "@/shared/components/buttons/DarkmodeButton";
 
 export default function WelcomePage() {
   return (
