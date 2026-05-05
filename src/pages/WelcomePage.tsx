@@ -1,12 +1,13 @@
 import { Button } from "@/shared/components/ui/button";
 import { LogIn, UserPlus } from "lucide-react";
 import { Typography } from "@/shared/components/ui/typography";
+import DarkmodeButton from "@/shared/components/Buttons/DarkmodeButton";
 
 export default function WelcomePage() {
   return (
     <>
       <header>
-        <Button>Modo oscuro</Button>
+        <DarkmodeButton />
       </header>
       <section className="flex grow flex-col justify-center gap-3">
         <section className="flex gap-3">
