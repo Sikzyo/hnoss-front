@@ -1,3 +1,7 @@
 export default function Welcome() {
-  return <>hola</>;
+  return (
+    <>
+      <div>hola</div>
+    </>
+  );
 }
