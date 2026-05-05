@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import Welcome from "@/pages/welcome";
+import Welcome from "@/pages/Welcome";
 
 const routes = createBrowserRouter([
   {
